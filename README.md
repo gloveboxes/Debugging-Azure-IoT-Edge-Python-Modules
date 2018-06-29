@@ -57,14 +57,14 @@ The IoT Edge project is multi rooted. You need to modify the project launcher.js
         },
 ```
 
-## Enable your Python Project for Remote Debgging
+## Enable your Python Project for Remote Debugging
 
 In your python project you need do do the following
 
 1. Add ptvsd==3.0.0 to the requirments.txt document in the module to PIP install the remote debug library
 2. add import ptvsd to your python script
 3. Enable remote debug attach - ptvsd.enable_attach("your secret", address=('0.0.0.0', 3000))
-4. If you want your code to halt until the debugger is atatched then add - ptvsd.wait_for_attach()
+4. If you want your code to halt until the debugger is attached then add - ptvsd.wait_for_attach()
 
 Example
 
