@@ -1,5 +1,12 @@
 # Debugging Python Azure IoT Edge Modules
 
+## Four Steps
+
+1. Map Port on Docker Module
+2. Configure Launch.json
+3. Enable remote debugging in Python project
+4. Debug project
+
 ## Opening a Python debug port in the docker container
 
 Example of opening port 3000.
@@ -87,3 +94,7 @@ from iothub_client import (IoTHubError, IoTHubMessage, IoTHubTransportProvider)
 ptvsd.enable_attach("your secret", address=('0.0.0.0', 3000))
 ptvsd.wait_for_attach()
 ```
+
+## Debug Project
+
+From Visual Studio debug tab run the attach configured above and set a break point in code.
