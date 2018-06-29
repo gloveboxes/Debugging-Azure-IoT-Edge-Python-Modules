@@ -18,6 +18,9 @@ Example of opening port 3000.
 }
 ```
 
+See [Docker API for more information](https://docs.docker.com/engine/api/v1.37/#operation/ContainerCreate
+)
+
 The json needs to be minified and escaped. From Visual Studio Code install the following extensions
 
 1. JSON Tools
